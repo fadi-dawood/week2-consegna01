@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.card-container{
+    position: relative;
+    height: 750px;
+    width: 600px;
+    margin: auto;
+    overflow: hidden;
+    background-image: url("house.jpg");
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 30px;
+}
+button{
+    border: none;
+    font-size: 14pt;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 30px;
+    transform: translate(0,75px);
+}
+#save{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #E60F24;
+    height: 50px;
+    width: 90px;
+    transform: translate(0,-75px);
+    color: white;
+}
+#other{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+}
+#share{
+    position: absolute;
+    bottom: 15px;
+    right: 85px;
+    height: 50px;
+    width: 50px;
+}
+#info{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    height: 50px;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-container:hover{
+    box-shadow: 7px 7px 10px rgb(54, 54, 54);
+    filter: brightness(80%);
+}
+.card-container:hover button{
+    display: inline-block;
+    transform: translatey(0px);
+    transition: opacity .2s, transform .35s;
+    transition-timing-function: ease-in;
+}
+.card-container:hover #save{
+    display: inline-block;
+    transform: translatey(0px);
+    transition: opacity .2s, transform .35s;
+    transition-timing-function: ease-in;
+}
+button:hover{
+    box-shadow: 7px 7px 10px rgb(54, 54, 54);
+}
+
